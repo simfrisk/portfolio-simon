@@ -9,8 +9,6 @@ export const IntroSection = () => {
       <TitleSimonFrisk />
       <TileImages />
       <WhoAmI />
-
-
     </>
 
   )
