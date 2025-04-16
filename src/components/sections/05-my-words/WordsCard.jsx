@@ -4,7 +4,7 @@ export const WordsCard = ({ title, text, image }) => {
   return (
     <>
       <img src={image} alt="" />
-      <h3>date module</h3>
+      <p className="date">July 14th</p>
       <h3>{title}</h3>
       <p>{text}</p>
       <button>Read Article</button>
