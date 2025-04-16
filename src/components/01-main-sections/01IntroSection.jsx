@@ -5,9 +5,11 @@ import { WhoAmI } from "../sections/01-intro-section/WhoAmI"
 export const IntroSection = () => {
   return (
     <>
-      <TitleSimonFrisk />
-      <TileImages />
-      <WhoAmI />
+      <section>
+        <TitleSimonFrisk />
+        <TileImages />
+        <WhoAmI />
+      </section>
     </>
 
   )

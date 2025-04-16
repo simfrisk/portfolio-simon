@@ -4,17 +4,19 @@ import { WordsCard } from "../sections/05-my-words/WordsCard"
 export const MyWords = () => {
   return (
     <>
-      <h2>My Words</h2>
-      {wordsData.words.map((word) => (
-        <WordsCard
-          key={word.id}
-          image={word.img}
-          title={word.title}
-          text={word.text}
-        />
-      )
-      )}
-      <p>Se more articles</p>
+      <section>
+        <h2>My Words</h2>
+        {wordsData.words.map((word) => (
+          <WordsCard
+            key={word.id}
+            image={word.img}
+            title={word.title}
+            text={word.text}
+          />
+        )
+        )}
+        <p>Se more articles</p>
+      </section>
 
     </>
   )
