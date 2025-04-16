@@ -1,5 +1,5 @@
-import { SkillsData } from "../sections/skills-section/SkillsData"
-import { SkillCategory } from "../sections/skills-section/SkillCategory"
+import { SkillsData } from "../sections/04-skills-section/SkillsData"
+import { SkillCategory } from "../sections/04-skills-section/SkillCategory"
 
 export const SkillsSection = () => {
   return (

@@ -2,10 +2,45 @@ body {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
+  padding-top: 64px;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: medium;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hello {
+  position: relative;
+}
+
+.intro-img-1 {
+  height: 1000px;
 }
