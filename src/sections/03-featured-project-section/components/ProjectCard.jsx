@@ -1,9 +1,9 @@
 import "../featured-project-section.css"
 
-export const ProjectCard = ({ title, description, languageTag, id }) => {
+export const ProjectCard = ({ title, description, languageTag, id, img }) => {
   return (
     <>
-      <img src="/project1.png" alt="" />
+      <img className="project-img" src={img} alt="" />
       <h3>{title}</h3>
       <p>{description}</p>
       <div className="language-tag-container">

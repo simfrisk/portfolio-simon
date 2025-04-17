@@ -21,24 +21,29 @@ h1 {
   font-size: 52px;
   font-weight: 700;
   font-style: bold;
+  margin: 12px;
 }
 
 h2 {
   font-size: 48px;
   font-weight: 500;
   font-style: normal;
+  margin: 12px;
+
 }
 
 h3 {
   font-size: 20px;
   font-weight: 500;
   font-style: medium;
+  margin: 12px;
 }
 
 p {
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
+  margin: 12px;
 }
 
 button {

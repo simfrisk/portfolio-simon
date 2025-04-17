@@ -9,7 +9,8 @@
         "Typescript",
         "CSS3",
         "HTML5"
-      ]
+      ],
+      "img": "./project1.png"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
         "Typescript",
         "CSS3",
         "HTML5"
-      ]
+      ],
+      "img": "./weather-app.png"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
         "Typescript",
         "CSS3",
         "HTML5"
-      ]
+      ],
+      "img": "./recipe-app.png"
     }
   ]
 }
