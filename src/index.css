@@ -46,7 +46,8 @@ p {
   margin: 12px;
 }
 
-button {
+button,
+.white-btn:hover {
   width: 300px;
   height: 48px;
   border-radius: 12px;
@@ -62,6 +63,7 @@ button {
   cursor: pointer;
 }
 
+
 section {
   padding: 64px 50px;
 }
@@ -69,4 +71,21 @@ section {
 .black-section {
   background-color: black;
   color: white;
+}
+
+
+.white-btn,
+button:hover {
+  background-color: white;
+  color: black;
+  outline: solid black 2px;
+}
+
+.down-arrow {
+  height: 28px;
+  width: auto;
+}
+
+button:hover .down-arrow {
+  filter: invert(100%);
 }

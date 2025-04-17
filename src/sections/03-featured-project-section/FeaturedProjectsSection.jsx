@@ -11,7 +11,7 @@ export const FeaturedProjectSection = () => {
         {data.cardData.map((card, id) => (
           <ProjectCard key={id} title={card.title} description={card.description} languageTag={card.languageTag} img={card.img} />
         ))}
-        <button>See more projects</button>
+        <button className="white-btn"> <img className="down-arrow" src="./Ic-ArrowDown.svg" alt="" />Se more projects</button>
       </section>
     </>
   )

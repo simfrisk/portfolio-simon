@@ -18,7 +18,7 @@ export const MyWords = () => {
           )
           )}
         </div>
-        <p>Se more articles</p>
+        <button className="white-btn"> <img className="down-arrow" src="./Ic-ArrowDown.svg" alt="" />Se more articles</button>
       </section>
 
     </>
