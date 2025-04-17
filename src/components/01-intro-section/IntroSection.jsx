@@ -1,6 +1,6 @@
-import { TitleSimonFrisk } from "../../sections/01-intro-section/TitleSimonFrisk"
-import { TileImages } from "../../sections/01-intro-section/TileImages"
-import { WhoAmI } from "../../sections/01-intro-section/WhoAmI"
+import { TitleSimonFrisk } from "./components/TitleSimonFrisk"
+import { TileImages } from "./components/TileImages"
+import { WhoAmI } from "./components/WhoAmI"
 import "./introSection.css"
 
 export const IntroSection = () => {

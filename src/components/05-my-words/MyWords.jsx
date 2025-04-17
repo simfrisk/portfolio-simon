@@ -1,5 +1,5 @@
-import wordsData from "../../../data/my-words-data.json"
-import { WordsCard } from "../../sections/05-my-words/WordsCard"
+import wordsData from "./data/my-words-data.json"
+import { WordsCard } from "./components/WordsCard"
 import "./my-words.css"
 
 export const MyWords = () => {

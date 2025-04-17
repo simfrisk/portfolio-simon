@@ -1,5 +1,3 @@
-import { words } from "../../../data/my-words-data.json"
-
 export const WordsCard = ({ title, text, image }) => {
   return (
     <>
