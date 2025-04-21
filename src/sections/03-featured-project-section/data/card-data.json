@@ -10,7 +10,9 @@
         "CSS3",
         "HTML5"
       ],
-      "img": "./project1.png"
+      "img": "./project1.png",
+      "livePageLink": "https://accessibility-simon-sofie.netlify.app",
+      "gitHubLink": "https://github.com/simfrisk/accessibility-sofie-simon"
     },
     {
       "id": 2,
@@ -22,7 +24,9 @@
         "CSS3",
         "HTML5"
       ],
-      "img": "./weather-app.png"
+      "img": "./weather-app.png",
+      "livePageLink": "https://weather-fire.netlify.app",
+      "gitHubLink": "https://github.com/simfrisk/weather-app-fire1"
     },
     {
       "id": 3,
@@ -34,7 +38,9 @@
         "CSS3",
         "HTML5"
       ],
-      "img": "./recipe-app.png"
+      "img": "./recipe-app.png",
+      "livePageLink": "https://simons-recipe.netlify.app",
+      "gitHubLink": "https://github.com/simfrisk/simons-recipe-library"
     }
   ]
 }
