@@ -1,7 +1,7 @@
 import wordsData from "./data/my-words-data.json"
 import { WordsCard } from "./components/WordsCard"
 import "./my-words.css"
-import { WhiteBtn } from "../../global-componets/WhiteBtn"
+import { Button } from "../../global-componets/Button"
 
 export const MyWords = () => {
   return (
@@ -19,7 +19,7 @@ export const MyWords = () => {
           )
           )}
         </div>
-        <WhiteBtn><img className="down-arrow" src="./Ic-ArrowDown.svg" alt="" />Se more projects</WhiteBtn>
+        <Button text={"See more projects"} icon={"./Ic-ArrowDown.svg"} />
       </section>
 
     </>

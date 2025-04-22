@@ -1,7 +1,7 @@
 import { ProjectCard } from "./components/ProjectCard"
 import data from "./data/card-data.json"
 import "./featured-project-section.css"
-import { WhiteBtn } from "../../global-componets/WhiteBtn"
+import { Button } from "../../global-componets/Button"
 
 
 export const FeaturedProjectSection = () => {
@@ -19,7 +19,7 @@ export const FeaturedProjectSection = () => {
             livePageLink={card.livePageLink}
             gitHubLink={card.gitHubLink} />
         ))}
-        <WhiteBtn><img className="down-arrow" src="./Ic-ArrowDown.svg" alt="" />Se more projects</WhiteBtn>
+        <Button text={"See more projects"} icon={"./Ic-ArrowDown.svg"} />
       </section>
     </>
   )

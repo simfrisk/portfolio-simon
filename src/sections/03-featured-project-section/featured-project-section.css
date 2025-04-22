@@ -13,12 +13,3 @@
 .project-img {
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.15);
 }
-
-.web-icon {
-  height: 28px;
-  width: auto;
-}
-
-button:hover .web-icon {
-  filter: invert(100%);
-}

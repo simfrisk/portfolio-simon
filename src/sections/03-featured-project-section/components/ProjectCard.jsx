@@ -1,5 +1,6 @@
 import "../featured-project-section.css"
 import { ProjectCardContainer } from "../../../global-componets/ProjectCardContainer.jsx"
+import { Button } from "../../../global-componets/Button.jsx"
 
 export const ProjectCard = ({ title, description, languageTag, id, img, livePageLink, gitHubLink }) => {
   return (
@@ -17,18 +18,13 @@ export const ProjectCard = ({ title, description, languageTag, id, img, livePage
             ))}
           </div>
           <a href={livePageLink} target="_blank" rel="noopener noreferrer">
-            <button className="web-btn">
-              <img className="web-icon" src="./ic-web.svg" alt="" />
-              Live Demo
-            </button>
+            <Button primaryBtn text={"Live Demo"} icon={"./Ic-Web.png"} />
           </a>
           <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
-            <button className="web-btn">
-              <img className="web-icon" src="./Ic-Github.svg" alt="" />
-              View Code
-            </button>
+            <Button primaryBtn text={"View Code"} icon={"./ic-github-2.svg"} />
           </a>
         </div>
+
         <br />
         <br />
       </ProjectCardContainer>

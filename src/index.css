@@ -89,3 +89,7 @@ button:hover {
 button:hover .down-arrow {
   filter: invert(100%);
 }
+
+a {
+  text-decoration: none;
+}
