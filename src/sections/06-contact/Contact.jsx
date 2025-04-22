@@ -1,13 +1,14 @@
+import { H2, P } from "../../global-componets/typography"
 
 export const Contact = () => {
   return (
     <>
       <section className="black-section">
-        <h2>Lets talk</h2>
+        <H2 secondaryH2>Lets talk</H2>
         <img src="/simon5.webp" alt="" />
-        <p>Simon Frisk</p>
-        <p>+46(0)73 433 30 61</p>
-        <p>simoncarlfrisk@gmail.com</p>
+        <P secondaryP>Simon Frisk</P>
+        <P secondaryP>+46(0)73 433 30 61</P>
+        <P secondaryP>simoncarlfrisk@gmail.com</P>
       </section>
     </>
   )

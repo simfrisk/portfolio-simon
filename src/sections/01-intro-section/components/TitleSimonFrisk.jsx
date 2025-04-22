@@ -1,8 +1,10 @@
+import { H1, H3 } from "../../../global-componets/typography"
+
 export const TitleSimonFrisk = () => {
   return (
     <>
-      <h3>Hi there, I’m</h3>
-      <h1>Simon Frisk</h1>
+      <H3>Hi there, I’m</H3>
+      <H1>Simon Frisk</H1>
     </>
   )
 }

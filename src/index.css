@@ -17,35 +17,6 @@ img {
   border-radius: 12px;
 }
 
-h1 {
-  font-size: 52px;
-  font-weight: 700;
-  font-style: bold;
-  margin: 12px;
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: 500;
-  font-style: normal;
-  margin: 12px;
-
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  font-style: medium;
-  margin: 12px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  margin: 12px;
-}
-
 button,
 .white-btn:hover {
   width: 300px;
@@ -70,7 +41,7 @@ section {
 
 .black-section {
   background-color: black;
-  color: white;
+  /* color: white; */
 }
 
 
@@ -88,8 +59,4 @@ button:hover {
 
 button:hover .down-arrow {
   filter: invert(100%);
-}
-
-a {
-  text-decoration: none;
 }

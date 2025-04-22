@@ -1,10 +1,11 @@
+import { H3, P } from "../../../global-componets/typography";
 
 export const SkillCategory = ({ title, skills }) => {
   return (
     <div>
-      <h3 className="skill-title">{title}</h3>
+      <H3 secondaryH3 className="skill-title">{title}</H3>
       {skills.map((skill, index) => (
-        <p key={index}>{skill}</p>
+        <P secondaryP key={index}>{skill}</P>
       ))}
     </div>
   );

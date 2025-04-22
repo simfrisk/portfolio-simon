@@ -2,12 +2,13 @@ import wordsData from "./data/my-words-data.json"
 import { WordsCard } from "./components/WordsCard"
 import "./my-words.css"
 import { Button } from "../../global-componets/Button"
+import { H2 } from "../../global-componets/typography"
 
 export const MyWords = () => {
   return (
     <>
       <section className="my-words-section">
-        <h2>My Words</h2>
+        <H2>My Words</H2>
         <div className="word-card">
           {wordsData.words.map((word) => (
             <WordsCard

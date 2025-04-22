@@ -2,13 +2,14 @@ import { ProjectCard } from "./components/ProjectCard"
 import data from "./data/card-data.json"
 import "./featured-project-section.css"
 import { Button } from "../../global-componets/Button"
+import { H2 } from "../../global-componets/typography"
 
 
 export const FeaturedProjectSection = () => {
   return (
     <>
       <section>
-        <h2>Featured Projects</h2>
+        <H2>Featured Projects</H2>
         {data.cardData.map((card, id) => (
           <ProjectCard
             key={id}
