@@ -8,6 +8,7 @@ export const H1 = styled.h1`
   font-weight: 700;
   line-height: 56px; 
 
+
 @media (min-width: 1025px) {
   font-size: 100px;
   line-height: normal;
@@ -53,6 +54,8 @@ line-height: normal;
 
 @media (min-width: 1025px) {
   font-size: 18px;
+  max-width: 782px;
+  margin: 0 auto;
 }
 `
 //#endregion

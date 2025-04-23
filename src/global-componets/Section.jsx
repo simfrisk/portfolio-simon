@@ -7,5 +7,7 @@ export const Section = styled.section`
 
   @media (min-width: 1025px) {
     padding: 128px 50px;
+    margin: 0 auto;
+    max-width: ${props => (props.secondarySection ? "100%" : "1500px")};
 }
 `
