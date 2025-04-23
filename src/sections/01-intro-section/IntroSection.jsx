@@ -7,7 +7,7 @@ import { Section } from "../../global-componets/Section"
 export const IntroSection = () => {
   return (
     <>
-      <Section className="intro-section">
+      <Section>
         <TitleSimonFrisk />
         <TileImages />
         <WhoAmI />

@@ -33,9 +33,9 @@ const ButtonWrapper = styled.button`
 `
 //#endregion
 
-export const Button = ({ primaryBtn, text, icon }) => {
+export const Button = ({ primaryBtn, text, icon, onClick }) => {
    return (
-      <ButtonWrapper primaryBtn={primaryBtn}>
+      <ButtonWrapper primaryBtn={primaryBtn} onClick={onClick}>
          {icon?.trim() && <img src={icon} alt="" />}
          {text}
       </ButtonWrapper>

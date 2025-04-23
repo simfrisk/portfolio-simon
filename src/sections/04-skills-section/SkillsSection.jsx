@@ -8,7 +8,7 @@ export const SkillsSection = () => {
   return (
     <>
       <Section secondarySection className="black-section">
-        <H2 secondaryH2>Skills</H2>
+        <H2>Skills</H2>
         <div className="skills">
           <SkillCategory title="Code" skills={data.SkillsData.Code} />
           <SkillCategory title="Toolbox" skills={data.SkillsData.Toolbox} />

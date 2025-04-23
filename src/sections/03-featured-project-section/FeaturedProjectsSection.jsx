@@ -1,3 +1,4 @@
+import { useState } from "react" // Import useState
 import { ProjectCard } from "./components/ProjectCard"
 import data from "./data/card-data.json"
 import "./featured-project-section.css"
@@ -6,12 +7,19 @@ import { H2 } from "../../global-componets/typography"
 import { Section } from "../../global-componets/Section"
 
 export const FeaturedProjectSection = () => {
+  // State to track if "See more projects" has been clicked
+  const [showAll, setShowAll] = useState(false)
+
+  // Handle click on "See more projects"
+  const handleSeeMoreClick = () => {
+    setShowAll(true)
+  }
   return (
     <>
       <Section>
         <H2>Featured Projects</H2>
         {data.cardData
-          .filter(card => card.displayCard !== "none")
+          .filter(card => showAll || card.displayCard !== "none")
           .map((card, id) => (
             <ProjectCard
               key={id}
@@ -24,7 +32,10 @@ export const FeaturedProjectSection = () => {
               flippedOrder={id % 2 !== 0}
             />
           ))}
-        <Button text={"See more projects"} icon={"./Ic-ArrowDown.svg"} />
+        <Button
+          text={"See more projects"}
+          icon={"./Ic-ArrowDown.svg"}
+          onClick={handleSeeMoreClick} />
       </Section>
     </>
   )
