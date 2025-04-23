@@ -19,11 +19,13 @@ const ProjectCardContainer = styled.div`
 `
 
 const ProjectImg = styled.img`
-  height: 343px;
-  width: 343px;
+  height: 300px;
+  width: 300px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.1);
 
 
   @media (min-width: 1024px) {

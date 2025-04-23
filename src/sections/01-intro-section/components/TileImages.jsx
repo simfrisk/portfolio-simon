@@ -7,18 +7,23 @@ const TitleImagesWrapper = styled.div`
 `
 
 const TileImage1 = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(0%, -45%) rotate(5deg);
+
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: 200px;
+  }
 `
 const TileImage2 = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 12px;
   position: absolute;
@@ -26,16 +31,26 @@ const TileImage2 = styled.img`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: 200px;
+  }
 `
 const TileImage3 = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 12px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-100%, -45%) rotate(-5deg);
+
+  @media (min-width: 1024px) {
+    width: 200px;
+    height: 200px;
+  }
 `
 
 export const TileImages = () => {

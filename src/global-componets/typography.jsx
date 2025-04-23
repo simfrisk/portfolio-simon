@@ -8,7 +8,6 @@ export const H1 = styled.h1`
   font-weight: 700;
   line-height: 56px; 
 
-
 @media (min-width: 1025px) {
   font-size: 100px;
   line-height: normal;
@@ -23,6 +22,7 @@ export const H2 = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: 56px; 
+  padding: 20px 0;
 
 @media (min-width: 1025px) {
   font-size: 80px;
