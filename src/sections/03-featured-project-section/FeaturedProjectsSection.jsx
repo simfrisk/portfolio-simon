@@ -10,9 +10,8 @@ export const FeaturedProjectSection = () => {
   // State to track if "See more projects" has been clicked
   const [showAll, setShowAll] = useState(false)
 
-  // Handle click on "See more projects"
   const handleSeeMoreClick = () => {
-    setShowAll(true)
+    setShowAll(prev => !prev); // Toggle true <-> false
   }
   return (
     <>
@@ -33,7 +32,7 @@ export const FeaturedProjectSection = () => {
             />
           ))}
         <Button
-          text={"See more projects"}
+          text={showAll ? "Show less" : "See more projects"}
           icon={"./Ic-ArrowDown.svg"}
           onClick={handleSeeMoreClick} />
       </Section>
