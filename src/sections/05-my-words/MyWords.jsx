@@ -3,11 +3,12 @@ import { WordsCard } from "./components/WordsCard"
 import "./my-words.css"
 import { Button } from "../../global-componets/Button"
 import { H2 } from "../../global-componets/typography"
+import { Section } from "../../global-componets/Section"
 
 export const MyWords = () => {
   return (
     <>
-      <section className="my-words-section">
+      <Section className="my-words-section">
         <H2>My Words</H2>
         <div className="word-card">
           {wordsData.words.map((word) => (
@@ -21,7 +22,7 @@ export const MyWords = () => {
           )}
         </div>
         <Button text={"See more projects"} icon={"./Ic-ArrowDown.svg"} />
-      </section>
+      </Section>
 
     </>
   )

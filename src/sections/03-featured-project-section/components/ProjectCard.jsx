@@ -1,23 +1,63 @@
 import "../featured-project-section.css"
-import { ProjectCardContainer } from "../../../global-componets/ProjectCardContainer.jsx"
 import { Button } from "../../../global-componets/Button.jsx"
 import { H3, P, A } from "../../../global-componets/typography.jsx"
+import styled from "styled-components"
 
-export const ProjectCard = ({ title, description, languageTag, id, img, livePageLink, gitHubLink }) => {
+
+const ProjectCardContainer = styled.div`
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: ${prop => (prop.flippedOrder ? "row-reverse" : "row")};
+    justify-content: space-between; 
+    align-items: center;
+    /* background-color: green; */
+    margin: 0 auto 64px;
+  }
+`
+
+const ProjectImg = styled.img`
+  height: 343px;
+  width: 343px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 12px;
+
+
+  @media (min-width: 1024px) {
+    width: 479px;
+    height: 479px;
+    margin: ${prop => (prop.flippedOrder ? "0 0px 0 128px" : "0 128px 0 0")};
+  }
+`;
+
+
+export const ProjectCard = ({
+  title,
+  description,
+  languageTag,
+  id,
+  img,
+  livePageLink,
+  gitHubLink,
+  flippedOrder
+}) => {
   return (
     <>
-      <ProjectCardContainer>
+      <ProjectCardContainer flippedOrder={flippedOrder}>
         <div className="card-img-container">
-          <img className="project-img" src={img} alt="" />
+          <ProjectImg flippedOrder={flippedOrder} src={img} alt="" />
         </div>
         <div className="card-content-container">
-          <H3>{title}</H3>
-          <P>{description}</P>
           <div className="language-tag-container">
             {languageTag.map((lang, id) => (
               <p className="language-tag" key={id}>{lang}</p>
             ))}
           </div>
+          <H3>{title}</H3>
+          <P>{description}</P>
           <A href={livePageLink} target="_blank" rel="noopener noreferrer">
             <Button primaryBtn text={"Live Demo"} icon={"./Ic-Web.png"} />
           </A>

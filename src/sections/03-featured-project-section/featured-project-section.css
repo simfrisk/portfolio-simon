@@ -10,6 +10,11 @@
   padding: 6px;
 }
 
-.project-img {
-  box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.15);
+/* .card-content-container {
+  background-color: red;
+  border: solid rgb(0, 62, 128) 5px;
 }
+
+.card-img-container {
+  background-color: blue;
+} */

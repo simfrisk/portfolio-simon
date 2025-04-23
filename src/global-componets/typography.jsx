@@ -17,7 +17,6 @@ export const H1 = styled.h1`
 
 //#region --- H2 ---
 export const H2 = styled.h2`
-  color: ${props => (props.secondaryH2 ? "white" : "black")};
   text-align: center;
   font-size: 60px;
   font-style: normal;
@@ -33,7 +32,6 @@ export const H2 = styled.h2`
 
 //#region --- H3 ---
 export const H3 = styled.h3`
-  color: ${props => (props.secondaryH3 ? "white" : "black")};
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -48,7 +46,6 @@ export const H3 = styled.h3`
 
 //#region --- P ---
 export const P = styled.p`
-color: ${props => (props.secondaryP ? "white" : "black")};
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -62,7 +59,6 @@ line-height: normal;
 
 //#region --- A ---
 export const A = styled.a`
-color: ${props => (props.secondaryA ? "white" : "black")};
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
