@@ -30,6 +30,7 @@ const TileImage2 = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  object-position: 0 30%;
   z-index: 2;
 
   @media (min-width: 1024px) {
@@ -57,9 +58,9 @@ export const TileImages = () => {
   return (
     <>
       <TitleImagesWrapper>
-        <TileImage1 className="intro-img-1" src="/simon3.webp" alt="" />
+        <TileImage1 className="intro-img-1" src="/code-image-2.webp" alt="" />
         <TileImage2 className="intro-img-2" src="/simon1.webp" alt="" />
-        <TileImage3 className="intro-img-3" src="/simon2.webp" alt="" />
+        <TileImage3 className="intro-img-3" src="code-image.webp" alt="" />
       </TitleImagesWrapper>
     </>
   )
