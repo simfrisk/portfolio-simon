@@ -1,6 +1,5 @@
-import "../featured-project-section.css"
 import { Button } from "../../../global-componets/Button.jsx"
-import { H3, P, A } from "../../../global-componets/typography.jsx"
+import { H3, PExtraMargin, A, P } from "../../../global-componets/typography.jsx"
 import styled from "styled-components"
 
 
@@ -15,7 +14,28 @@ const ProjectCardContainer = styled.div`
     align-items: center;
     /* background-color: green; */
     margin: 0 auto 64px;
+    max-width: 1300px;
   }
+`
+
+const LanguageTagContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+  }
+`
+
+const LanguageTag = styled.p`
+  display: flex;
+  border: solid black 1px;
+  border-radius: 4px;
+  padding: 6px;
+  justify-content: center;
+  width: 100%;
 `
 
 const ProjectImg = styled.img`
@@ -35,6 +55,22 @@ const ProjectImg = styled.img`
   }
 `;
 
+const TextContent = styled.div`
+h3 {
+  text-align: left;
+  margin-left: 0;
+}
+
+  p {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  button {
+    margin: 12px 0;
+  }
+`
+
 
 export const ProjectCard = ({
   title,
@@ -52,21 +88,21 @@ export const ProjectCard = ({
         <div className="card-img-container">
           <ProjectImg flippedOrder={flippedOrder} src={img} alt="" />
         </div>
-        <div className="card-content-container">
-          <div className="language-tag-container">
+        <TextContent className="card-content-container">
+          <LanguageTagContainer>
             {languageTag.map((lang, id) => (
-              <p className="language-tag" key={id}>{lang}</p>
+              <LanguageTag key={id}>{lang}</LanguageTag>
             ))}
-          </div>
+          </LanguageTagContainer>
           <H3>{title}</H3>
-          <P>{description}</P>
+          <PExtraMargin>{description}</PExtraMargin>
           <A href={livePageLink} target="_blank" rel="noopener noreferrer">
             <Button primaryBtn text={"Live Demo"} icon={"./Ic-Web.png"} />
           </A>
           <A href={gitHubLink} target="_blank" rel="noopener noreferrer">
             <Button primaryBtn text={"View Code"} icon={"./ic-github-2.svg"} />
           </A>
-        </div>
+        </TextContent>
 
         <br />
         <br />

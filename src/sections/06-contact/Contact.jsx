@@ -8,6 +8,7 @@ const ContactImage = styled.img`
   object-fit: cover;
   border-radius: 200px;
   object-position: 0 30%;
+
 `
 const IconContainer = styled.div`
 filter: invert(100%);

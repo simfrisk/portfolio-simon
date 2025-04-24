@@ -15,6 +15,8 @@ const ButtonWrapper = styled.button`
   align-content: center;
   margin: 12px auto;
   gap: 16px;
+  cursor: pointer;
+  transition: ease .3s;
 
   img{
    height: 31px;
@@ -25,6 +27,7 @@ const ButtonWrapper = styled.button`
   &:hover{
    background-color: ${props => (props.primaryBtn ? "white" : "black")}; 
    color: ${props => (props.primaryBtn ? "black" : "white")};
+   transform: scale(.97);
 
    img {
    filter: ${props => (props.primaryBtn ? "invert(0%)" : "invert(100%)")}

@@ -1,9 +1,8 @@
 import { useState } from "react" // Import useState
 import { ProjectCard } from "./components/ProjectCard"
 import data from "./data/card-data.json"
-import "./featured-project-section.css"
 import { Button } from "../../global-componets/Button"
-import { H2 } from "../../global-componets/typography"
+import { H2, H2ExtraMargin } from "../../global-componets/typography"
 import { Section } from "../../global-componets/Section"
 
 export const FeaturedProjectSection = () => {
@@ -16,7 +15,7 @@ export const FeaturedProjectSection = () => {
   return (
     <>
       <Section>
-        <H2>Featured Projects</H2>
+        <H2ExtraMargin>Featured Projects</H2ExtraMargin>
         {data.cardData
           .filter(card => showAll || card.displayCard !== "none")
           .map((card, id) => (
@@ -35,7 +34,7 @@ export const FeaturedProjectSection = () => {
           text={showAll ? "Show less" : "See more projects"}
           icon={"./Ic-ArrowDown.svg"}
           onClick={handleSeeMoreClick} />
-      </Section>
+      </Section >
     </>
   )
 }
