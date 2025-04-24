@@ -2,7 +2,7 @@ import { useState } from "react" // Import useState
 import { ProjectCard } from "./components/ProjectCard"
 import data from "./data/card-data.json"
 import { Button } from "../../global-componets/Button"
-import { H2, H2ExtraMargin } from "../../global-componets/typography"
+import { H2ExtraMargin } from "../../global-componets/typography"
 import { Section } from "../../global-componets/Section"
 
 export const FeaturedProjectSection = () => {

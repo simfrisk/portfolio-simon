@@ -1,4 +1,4 @@
-import { H3, P } from "../../../global-componets/typography";
+import { P } from "../../../global-componets/typography";
 
 import styled from "styled-components";
 

@@ -43,14 +43,27 @@ const TextContent = styled.div`
 }
 `
 
-export const WordsCard = ({ title, text, image }) => {
+const CenteredP = styled(P)`
+  text-align: center;
+  border: solid black 1px;
+  padding: 6px;
+  border-radius: 4px;
+  width: 142px;
+
+  @media (min-width: 1024px) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+`
+
+export const WordsCard = ({ title, text, image, date }) => {
   return (
     <WordsCardWrapper>
       <ImageWrapper>
         <Image src={image} alt="" />
       </ImageWrapper>
       <TextContent>
-        <P className="date">July 14th</P>
+        <CenteredP>{date}</CenteredP>
         <H3>{title}</H3>
         <PExtraMargin>{text}</PExtraMargin>
         <Button primaryBtn text={"Read article"} />
