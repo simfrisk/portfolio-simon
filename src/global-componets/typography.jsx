@@ -19,7 +19,7 @@ export const H1 = styled.h1`
 //#region --- H2 ---
 export const H2 = styled.h2`
   text-align: center;
-  font-size: 60px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 56px; 
@@ -36,6 +36,7 @@ export const H2 = styled.h2`
 //#region --- H2 extra padding ---
 export const H2ExtraMargin = styled(H2)`
   margin-bottom: 64px;
+
 
   @media (min-width: 1025px) {
     margin-bottom: 128px;

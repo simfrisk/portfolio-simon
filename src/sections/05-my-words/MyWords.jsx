@@ -1,9 +1,8 @@
 import { useState } from "react";
 import wordsData from "./data/my-words-data.json"
 import { WordsCard } from "./components/WordsCard"
-import "./my-words.css"
 import { Button } from "../../global-componets/Button"
-import { H2, H2ExtraMargin } from "../../global-componets/typography"
+import { H2ExtraMargin } from "../../global-componets/typography"
 import { Section } from "../../global-componets/Section"
 
 
