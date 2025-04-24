@@ -28,12 +28,15 @@ export const MyWords = () => {
                 image={word.img}
                 title={word.title}
                 text={word.text}
-                date={word}
+                date={word.date}
               />
             )
             )}
         </div>
-        <Button onClick={handleSeeMoreClick} text={"See more projects"} icon={"./Ic-ArrowDown.svg"} />
+        <Button
+          onClick={handleSeeMoreClick}
+          text={showAll ? "See fewer projects" : "See more projects"}
+          icon={"./Ic-ArrowDown.svg"} />
       </Section>
 
     </>
