@@ -35,7 +35,8 @@ export const MyWords = () => {
         <Button
           onClick={handleSeeMoreClick}
           text={showAll ? "See fewer projects" : "See more projects"}
-          icon={"./Ic-ArrowDown.svg"} />
+          icon={showAll ? "./Ic-ArrowUp.png" : "./Ic-ArrowDown.svg"}
+        />
       </Section>
 
     </>

@@ -32,7 +32,7 @@ export const FeaturedProjectSection = () => {
           ))}
         <Button
           text={showAll ? "Show less" : "See more projects"}
-          icon={"./Ic-ArrowDown.svg"}
+          icon={showAll ? "./Ic-ArrowUp.png" : "./Ic-ArrowDown.svg"}
           onClick={handleSeeMoreClick} />
       </Section >
     </>
