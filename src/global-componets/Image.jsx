@@ -15,8 +15,9 @@ export const Image = styled.img`
   }
 
   @media ${media.desktop} {
-    width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+    width: 479px;
+    height: 100%;
+  
+
   }
 `

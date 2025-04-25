@@ -9,7 +9,8 @@ const WordsCardWrapper = styled.div`
 
   @media ${media.tablet} {
     display: flex;
-    column-gap: 12px;
+    align-items: center;
+    column-gap: 24px;
     margin-bottom: 64px;
   }
 
@@ -25,6 +26,7 @@ const ImageWrapper = styled.div`
   justify-content: center;
   margin-bottom: 24px;
 
+
   @media ${media.desktop} {
     justify-content: flex-start;
     align-items: flex-start;
@@ -33,7 +35,7 @@ const ImageWrapper = styled.div`
 `
 
 const TextContent = styled.div`
-  @media ${media.tabletAndBeyond} {
+@media ${media.tabletAndBeyond} {
   text-align: left;
 
   h3 {
