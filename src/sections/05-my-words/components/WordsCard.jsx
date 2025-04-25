@@ -65,7 +65,7 @@ const CenteredP = styled(P)`
   }
 `
 
-export const WordsCard = ({ title, text, image, date }) => {
+export const WordsCard = ({ title, text, image, date, link }) => {
   return (
     <WordsCardWrapper>
       <ImageWrapper>
@@ -75,8 +75,10 @@ export const WordsCard = ({ title, text, image, date }) => {
         <CenteredP>{date}</CenteredP>
         <H3>{title}</H3>
         <PExtraMargin>{text}</PExtraMargin>
-        <Button primaryBtn text={"Read article"} />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <Button primaryBtn text={"Read article"} />
+        </a>
       </TextContent>
-    </WordsCardWrapper>
+    </WordsCardWrapper >
   )
 }

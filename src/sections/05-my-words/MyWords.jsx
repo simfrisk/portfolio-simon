@@ -28,6 +28,7 @@ export const MyWords = () => {
                 title={word.title}
                 text={word.text}
                 date={word.date}
+                link={word.link}
               />
             )
             )}
