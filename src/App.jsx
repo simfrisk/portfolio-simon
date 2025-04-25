@@ -5,8 +5,6 @@ import { FeaturedProjectSection } from "./sections/03-featured-project-section/F
 import { SkillsSection } from "./sections/04-skills-section/SkillsSection"
 import { MyWords } from "./sections/05-my-words/MyWords"
 import { Contact } from "./sections/06-contact/Contact"
-import { ThemeProvider } from "styled-components"
-import { theme } from "./global-componets/Theme"
 
 
 export const App = () => {

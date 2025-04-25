@@ -1,13 +1,14 @@
 import { Button } from "../../../global-componets/Button.jsx"
 import { H3, PExtraMargin, A, P } from "../../../global-componets/typography.jsx"
 import styled from "styled-components"
+import { media } from "../../../styles/media.js"
 
 
 const ProjectCardContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
 
-  @media (min-width: 1024px) {
+  @media ${media.desktop} {
     display: flex;
     flex-direction: ${prop => (prop.flippedOrder ? "row-reverse" : "row")};
     justify-content: space-between; 
@@ -24,8 +25,12 @@ const LanguageTagContainer = styled.div`
   gap: 5px;
 
 
-  @media (min-width: 1024px) {
+  @media ${media.desktop} {
     justify-content: flex-start;
+  }
+
+  @media ${media.smallMobile} {
+  font-size: 12px;
   }
 `
 
@@ -39,25 +44,30 @@ const LanguageTag = styled.p`
 `
 
 const ProjectImg = styled.img`
-  height: 300px;
-  width: 300px;
+  width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.1);
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media ${media.tablet} {
     width: 100%;
     height: auto;
   aspect-ratio: 16 / 9;
   }
 
 
-  @media (min-width: 1024px) {
+  @media ${media.desktop} {
     width: 479px;
     height: 479px;
     margin: ${prop => (prop.flippedOrder ? "0 0px 0 128px" : "0 128px 0 0")};
+  }
+
+  @media ${media.smallMobile} {
+    width: 230px;
+    height: 230px;
   }
 `;
 

@@ -2,17 +2,18 @@ import { Button } from "../../../global-componets/Button"
 import { H3, P, PExtraMargin } from "../../../global-componets/typography"
 import { Image } from "../../../global-componets/Image"
 import styled from "styled-components"
+import { media } from "../../../styles/media"
 
 const WordsCardWrapper = styled.div`
   display: block;
 
-  @media (min-width: 768px) {
+  @media ${media.tablet} {
     display: flex;
     column-gap: 12px;
     margin-bottom: 64px;
   }
 
-  @media (min-width: 1024px) {
+  @media ${media.desktop} {
     column-gap: 125px;
     display: flex;
     margin-bottom: 64px;
@@ -24,7 +25,7 @@ const ImageWrapper = styled.div`
   justify-content: center;
   margin-bottom: 24px;
 
-  @media (min-width: 1024px) {
+  @media ${media.desktop} {
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 0;
@@ -32,7 +33,7 @@ const ImageWrapper = styled.div`
 `
 
 const TextContent = styled.div`
-  @media (min-width: 768px) {
+  @media ${media.tabletAndBeyond} {
   text-align: left;
 
   h3 {
@@ -56,7 +57,7 @@ const CenteredP = styled(P)`
   border-radius: 4px;
   width: 142px;
 
-  @media (min-width: 768px) {
+  @media ${media.tabletAndBeyond} {
     margin-right: auto;
     margin-left: 0;
   }

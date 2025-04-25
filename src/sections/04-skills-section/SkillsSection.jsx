@@ -3,13 +3,14 @@ import { SkillCategory } from "./components/SkillCategory"
 import { H2 } from "../../global-componets/typography"
 import { Section } from "../../global-componets/Section"
 import styled from "styled-components"
+import { media } from "../../styles/media"
 
 const Skills = styled.div`
 
   display: flex;
   flex-direction: column;
 
-@media (min-width: 1024px) {
+  @media ${media.desktop} {
 
     display: flex;
     flex-direction: row;

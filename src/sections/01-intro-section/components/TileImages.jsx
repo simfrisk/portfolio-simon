@@ -1,9 +1,14 @@
 import styled from "styled-components"
+import { media } from "../../../styles/media"
 
 const TitleImagesWrapper = styled.div`
     position: relative;
     height: 250px;
     width: 100%;
+
+    @media ${media.tablet} {
+      height: 350px;
+    }
 `
 
 const TileImageBase = styled.img`
@@ -15,9 +20,19 @@ const TileImageBase = styled.img`
   top: 50%;
   left: 50%;
 
-  @media (min-width: 1024px) {
+  @media ${media.tablet} {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media ${media.desktop} {
     width: 200px;
     height: 200px;
+  }
+
+  @media ${media.smallMobile} {
+    width: 130px;
+    height: 130px;
   }
 `
 

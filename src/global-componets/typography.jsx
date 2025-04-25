@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "../styles/media";
 
 //#region --- H1 ---
 export const H1 = styled.h1`
@@ -9,7 +10,7 @@ export const H1 = styled.h1`
   line-height: 56px; 
   margin: 16px;
 
-@media (min-width: 1025px) {
+  @media ${media.desktop} {
   font-size: 100px;
   line-height: normal;
 }
@@ -26,8 +27,13 @@ export const H2 = styled.h2`
   padding: 20px;
   margin: 16px;
 
-@media (min-width: 1025px) {
+  @media ${media.desktop} {
   font-size: 80px;
+}
+
+@media ${media.smallMobile} {
+  font-size: 42px;
+  margin: 0 auto;
 }
 
 `
@@ -54,7 +60,7 @@ export const H3 = styled.h3`
   line-height: normal;
   margin: 16px;
 
-@media (min-width: 1025px) {
+  @media ${media.desktop} {
   font-size: 30px;
 }
 `
@@ -68,7 +74,7 @@ font-weight: 400;
 line-height: normal;
 margin: 16px auto;
 
-@media (min-width: 1025px) {
+@media ${media.desktop} {
   font-size: 18px;
   max-width: 782px;
 }
@@ -89,7 +95,7 @@ font-weight: 400;
 line-height: normal;
 text-decoration: none;
 
-@media (min-width: 1025px) {
+@media ${media.desktop} {
   font-size: 18px;
 }
 `

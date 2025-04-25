@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { media } from "../styles/media"
 
 // #region --- CSS ---
 const ButtonWrapper = styled.button`
@@ -18,6 +19,11 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
   transition: ease .3s;
 
+  @media ${media.smallMobile} {
+   width: 203px;
+   height: 48px;
+    }
+  
   img{
    height: 31px;
    width: 31px;
@@ -32,6 +38,7 @@ const ButtonWrapper = styled.button`
    img {
    filter: ${props => (props.primaryBtn ? "invert(0%)" : "invert(100%)")}
    }
+   
 }
 `
 //#endregion
