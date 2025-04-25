@@ -6,9 +6,15 @@ import styled from "styled-components"
 const WordsCardWrapper = styled.div`
   display: block;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: flex;
+    column-gap: 12px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: 1024px) {
     column-gap: 125px;
+    display: flex;
     margin-bottom: 64px;
   }
 `
@@ -26,7 +32,7 @@ const ImageWrapper = styled.div`
 `
 
 const TextContent = styled.div`
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
   text-align: left;
 
   h3 {
@@ -50,7 +56,7 @@ const CenteredP = styled(P)`
   border-radius: 4px;
   width: 142px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     margin-right: auto;
     margin-left: 0;
   }

@@ -47,6 +47,12 @@ const ProjectImg = styled.img`
   object-fit: cover;
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.1);
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+  aspect-ratio: 16 / 9;
+  }
+
 
   @media (min-width: 1024px) {
     width: 479px;
