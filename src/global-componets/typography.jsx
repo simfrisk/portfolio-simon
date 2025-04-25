@@ -13,6 +13,7 @@ export const H1 = styled.h1`
   @media ${media.desktop} {
   font-size: 100px;
   line-height: normal;
+  margin: 0;
 }
 `
 //#endregion

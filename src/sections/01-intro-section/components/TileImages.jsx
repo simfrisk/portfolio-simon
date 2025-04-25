@@ -9,6 +9,10 @@ const TitleImagesWrapper = styled.div`
     @media ${media.tablet} {
       height: 350px;
     }
+
+    @media ${media.desktop} {
+      height: 370px;
+    }
 `
 
 const TileImageBase = styled.img`
@@ -26,8 +30,8 @@ const TileImageBase = styled.img`
   }
 
   @media ${media.desktop} {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   @media ${media.smallMobile} {

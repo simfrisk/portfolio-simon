@@ -7,7 +7,7 @@ export const Section = styled.section`
   color: ${props => (props.secondarySection ? "white" : "black")};
 
   @media ${media.desktop} {
-    padding: 128px 50px;
+    padding: 80px;
     margin: 0 auto;
     max-width: ${props => (props.secondarySection ? "100%" : "1500px")};
 }
