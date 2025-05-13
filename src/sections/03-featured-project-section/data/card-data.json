@@ -48,7 +48,6 @@
       "description": "A dynamic recipe application powered by an API, offering users the ability to filter and sort recipes by cuisine, preparation time, and price. With a user-friendly interface and personalized search options, it makes discovering and planning meals both easy and enjoyable.",
       "languageTag": [
         "JavaScript",
-        "Typescript",
         "CSS3",
         "HTML5"
       ],
@@ -62,7 +61,6 @@
       "description": "My first project using HTML, CSS, and some JavaScript. I used Flexbox and Grid for layout, added a hero image, and focused on clean, semantic code. It was a great intro to building responsive, visually engaging websites.",
       "languageTag": [
         "JavaScript",
-        "Typescript",
         "CSS3",
         "HTML5"
       ],

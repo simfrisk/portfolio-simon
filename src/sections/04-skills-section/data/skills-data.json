@@ -5,28 +5,28 @@
       "CSS3",
       "JavaScript",
       "ES6",
+      "Node.js",
       "React",
       "Styled Components",
       "GitHub"
     ],
     "Toolbox": [
-      "Atom",
       "Postman",
       "Adobe Photoshop",
       "Adobe Illustrator",
       "Figma",
       "Keynote",
-      "Slack"
+      "Slack",
+      "Notion"
     ],
     "Upcoming": [
-      "Node.js"
+      "Mongo DB",
+      "Express.js"
     ],
     "More": [
-      "Branding",
-      "Strategy",
-      "Process Design",
-      "Concept Development",
-      "Agile methodology"
+      "Accessibility Best Practices",
+      "Freelance Experience",
+      "Background in design"
     ]
   }
 }
