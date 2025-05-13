@@ -2,6 +2,20 @@
   "cardData": [
     {
       "id": 1,
+      "title": "Messaging app",
+      "description": "A simple messaging app built with React and styled-components. Users can post and read uplifting messages, stored and retrieved via an API. Clean design and responsive UI.",
+      "languageTag": [
+        "JavaScript",
+        "React",
+        "CSS3",
+        "HTML5"
+      ],
+      "img": "./happy3.png",
+      "livePageLink": "https://happy-thought2.netlify.app/.app",
+      "gitHubLink": "https://github.com/simfrisk/portfolio-simon"
+    },
+    {
+      "id": 2,
       "title": "Accessibility focused Quiz",
       "description": "An interactive, accessibility-first quiz application built with JavaScript. Designed to deliver a seamless and inclusive user experience, it demonstrates a strong focus on clean design, responsive functionality, and user-centric development.",
       "languageTag": [
@@ -15,7 +29,7 @@
       "gitHubLink": "https://github.com/simfrisk/accessibility-sofie-simon"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Weather App with API",
       "description": "A dynamic weather application powered by a real-time API, delivering up-to-date current conditions and a weekly forecast. Users can easily search and switch between cities, with a sleek interface designed for both speed and clarity. Built to be responsive, intuitive, and reliable.",
       "languageTag": [
@@ -29,7 +43,7 @@
       "gitHubLink": "https://github.com/simfrisk/weather-app-fire1"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Recepie finder with API",
       "description": "A dynamic recipe application powered by an API, offering users the ability to filter and sort recipes by cuisine, preparation time, and price. With a user-friendly interface and personalized search options, it makes discovering and planning meals both easy and enjoyable.",
       "languageTag": [
@@ -43,7 +57,7 @@
       "gitHubLink": "https://github.com/simfrisk/simons-recipe-library"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Boulder Zone",
       "description": "My first project using HTML, CSS, and some JavaScript. I used Flexbox and Grid for layout, added a hero image, and focused on clean, semantic code. It was a great intro to building responsive, visually engaging websites.",
       "languageTag": [
