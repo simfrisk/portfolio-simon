@@ -6,7 +6,10 @@ export const TechSection = () => {
     <>
       <Section secondarySection>
         <H2>Tech</H2>
-        <P>CSS • JavaScript • ES6 • TypeScript • React • React Hooks • Web Accessibility • APIs • Mob-programming • Pair-programming • GitHub</P>
+        <P>
+          TypeScript • React •CSS • JavaScript • Node.js • MongoDB • Express.js • ES6 • React Hooks
+          • Web Accessibility • APIs • Mob-programming • Pair-programming • GitHub
+        </P>
       </Section>
     </>
   )
