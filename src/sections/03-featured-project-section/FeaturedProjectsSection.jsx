@@ -10,14 +10,14 @@ export const FeaturedProjectSection = () => {
   const [showAll, setShowAll] = useState(false)
 
   const handleSeeMoreClick = () => {
-    setShowAll(prev => !prev); // Toggle true <-> false
+    setShowAll((prev) => !prev) // Toggle true <-> false
   }
   return (
     <>
       <Section>
         <H2ExtraMargin>Featured Projects</H2ExtraMargin>
         {data.cardData
-          .filter(card => showAll || card.displayCard !== "none")
+          .filter((card) => showAll || card.displayCard !== "none")
           .map((card, id) => (
             <ProjectCard
               key={id}
@@ -32,9 +32,10 @@ export const FeaturedProjectSection = () => {
           ))}
         <Button
           text={showAll ? "Show less" : "See more projects"}
-          icon={showAll ? "./Ic-ArrowUp.png" : "./Ic-ArrowDown.svg"}
-          onClick={handleSeeMoreClick} />
-      </Section >
+          icon={showAll ? "./Ic-ArrowUp.webp" : "./Ic-ArrowDown.svg"}
+          onClick={handleSeeMoreClick}
+        />
+      </Section>
     </>
   )
 }

@@ -3,15 +3,14 @@ import { H3, PExtraMargin, A, P } from "../../../global-componets/typography.jsx
 import styled from "styled-components"
 import { media } from "../../../styles/media.js"
 
-
 const ProjectCardContainer = styled.div`
   max-width: 100%;
   margin: 0 auto;
 
   @media ${media.desktop} {
     display: flex;
-    flex-direction: ${prop => (prop.flippedOrder ? "row-reverse" : "row")};
-    justify-content: space-between; 
+    flex-direction: ${(prop) => (prop.flippedOrder ? "row-reverse" : "row")};
+    justify-content: space-between;
     align-items: center;
     /* background-color: green; */
     margin: 0 auto 64px;
@@ -24,13 +23,12 @@ const LanguageTagContainer = styled.div`
   justify-content: center;
   gap: 5px;
 
-
   @media ${media.desktop} {
     justify-content: flex-start;
   }
 
   @media ${media.smallMobile} {
-  font-size: 12px;
+    font-size: 12px;
   }
 `
 
@@ -55,27 +53,26 @@ const ProjectImg = styled.img`
   @media ${media.tablet} {
     width: 100%;
     height: auto;
-  aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9;
   }
-
 
   @media ${media.desktop} {
     width: 479px;
     height: 479px;
-    margin: ${prop => (prop.flippedOrder ? "0 0px 0 128px" : "0 128px 0 0")};
+    margin: ${(prop) => (prop.flippedOrder ? "0 0px 0 128px" : "0 128px 0 0")};
   }
 
   @media ${media.smallMobile} {
     width: 230px;
     height: 230px;
   }
-`;
+`
 
 const TextContent = styled.div`
-h3 {
-  text-align: left;
-  margin-left: 0;
-}
+  h3 {
+    text-align: left;
+    margin-left: 0;
+  }
 
   p {
     text-align: left;
@@ -87,7 +84,6 @@ h3 {
   }
 `
 
-
 export const ProjectCard = ({
   title,
   description,
@@ -96,13 +92,17 @@ export const ProjectCard = ({
   img,
   livePageLink,
   gitHubLink,
-  flippedOrder
+  flippedOrder,
 }) => {
   return (
     <>
       <ProjectCardContainer flippedOrder={flippedOrder}>
         <div className="card-img-container">
-          <ProjectImg flippedOrder={flippedOrder} src={img} alt="" />
+          <ProjectImg
+            flippedOrder={flippedOrder}
+            src={img}
+            alt=""
+          />
         </div>
         <TextContent className="card-content-container">
           <LanguageTagContainer>
@@ -112,11 +112,27 @@ export const ProjectCard = ({
           </LanguageTagContainer>
           <H3>{title}</H3>
           <PExtraMargin>{description}</PExtraMargin>
-          <A href={livePageLink} target="_blank" rel="noopener noreferrer">
-            <Button primaryBtn text={"Live Demo"} icon={"./Ic-Web.png"} />
+          <A
+            href={livePageLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              primaryBtn
+              text={"Live Demo"}
+              icon={"./Ic-Web.webp"}
+            />
           </A>
-          <A href={gitHubLink} target="_blank" rel="noopener noreferrer">
-            <Button primaryBtn text={"View Code"} icon={"./ic-github-2.svg"} />
+          <A
+            href={gitHubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              primaryBtn
+              text={"View Code"}
+              icon={"./ic-github-2.svg"}
+            />
           </A>
         </TextContent>
 
