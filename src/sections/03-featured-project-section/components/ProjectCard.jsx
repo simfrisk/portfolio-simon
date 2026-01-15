@@ -48,6 +48,7 @@ const ProjectImg = styled.img`
   overflow: hidden;
   border-radius: 12px;
   object-fit: cover;
+  object-position: left center;
   box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.1);
 
   @media ${media.tablet} {
@@ -123,17 +124,19 @@ export const ProjectCard = ({
               icon={"./Ic-Web.webp"}
             />
           </A>
-          <A
-            href={gitHubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              primaryBtn
-              text={"View Code"}
-              icon={"./ic-github-2.svg"}
-            />
-          </A>
+          {gitHubLink && (
+            <A
+              href={gitHubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                primaryBtn
+                text={"View Code"}
+                icon={"./ic-github-2.svg"}
+              />
+            </A>
+          )}
         </TextContent>
 
         <br />

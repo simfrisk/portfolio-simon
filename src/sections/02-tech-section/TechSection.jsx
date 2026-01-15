@@ -7,8 +7,8 @@ export const TechSection = () => {
       <Section secondarySection>
         <H2>Tech</H2>
         <P>
-          TypeScript • React •CSS • JavaScript • Node.js • MongoDB • Express.js • ES6 • React Hooks
-          • Web Accessibility • APIs • Mob-programming • Pair-programming • GitHub
+          TypeScript • React • Next.js • CSS • JavaScript • Node.js • MongoDB • Express.js • ES6 •
+          React Hooks • Web Accessibility • APIs • Mob-programming • Pair-programming • GitHub
         </P>
       </Section>
     </>

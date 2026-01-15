@@ -7,6 +7,7 @@
       "TypeScript",
       "ES6",
       "React",
+      "Next.js",
       "Vite",
       "Styled Components",
       "Tailwind CSS"
@@ -22,7 +23,7 @@
       "Slack",
       "Notion"
     ],
-    "Upcoming": ["Next.js", "HeroUi"],
+    "Upcoming": ["Go"],
     "Other Skills": ["Accessibility Best Practices", "Freelance Experience", "Background in design"]
   }
 }

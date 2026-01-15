@@ -6,7 +6,6 @@ import { SkillsSection } from "./sections/04-skills-section/SkillsSection"
 import { MyWords } from "./sections/05-my-words/MyWords"
 import { Contact } from "./sections/06-contact/Contact"
 
-
 export const App = () => {
   return (
     <>
