@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Open Source Cloud",
-      "description": "A cloud platform dashboard built as part of the development team at Eyevinn Technology. Working on both frontend and backend, I contribute to building a comprehensive SaaS solution for managing cloud resources. The platform features a modern, responsive interface with real-time data visualization and robust API integrations.",
+      "description": "A cloud platform built as part of the development team at Eyevinn Technology. Working on both frontend and backend, I contribute to building a comprehensive SaaS solution for managing cloud resources. The app is built in typescript with Next.js and node.js. and mongodb for the database.",
       "languageTag": ["TypeScript", "React", "Next.js", "Node.js", "CSS3"],
       "img": "./OSC.png",
       "livePageLink": "https://app.osaas.io/dashboard"
